@@ -1,0 +1,79 @@
+.box{
+	height: 200px;
+	width: 250px;
+	display: inline-block;
+}
+
+.green{
+	background-color: #91e6c7;
+}
+
+.pink{
+	background-color: #d595aa;
+}
+
+.blue{
+	background-color: #5ecdde;
+}
+
+.control{
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #444;
+	cursor: pointer;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.control[data-filter=".green"]{
+	color: #91e6c7;
+}
+
+.control[data-filter=".blue"]{
+	color: #5ecdde;
+}
+
+.control[data-filter=".pink"]{
+	color: #d595aa;
+}
+
+.control[data-filter="none"]{
+	color: #fff;
+}
+
+.control:hover{
+	background-color: grey;
+}
+
+button:focus{
+	outline: 0;
+}
+
+.mixitup-control-active{
+	background-color: transparent;
+	border: 1px solid #444;
+	color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

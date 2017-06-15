@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+	.box{
+		border: 1px solid black;
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="controls">
+		<button type="button" class="control" data-filter="all">All</button>
+		<button type="button" class="control" data-toggle=".UX">UX</button>
+		<button type="button" class="control" data-toggle=".Print">Print</button>
+		<button type="button" class="control" data-toggle=".Web">Web</button>
+		<button type="button" class="control" data-filter="none">None</button>
+	</div>
+
+	<div class="container">
+		<div class="box UX Web mix">UX and Web</div>
+		<div class="box Web mix">Web</div>
+		<div class="box Web Print mix">Print and Web</div>
+		<div class="box UX mix">Ux</div>
+		<div class="box Web mix">Web</div>
+		<div class="box Print UX Web mix">Print and UX and Web</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mixitup.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		var config = {
+			controls: {
+				toggleLogic: 'and'
+			}
+		}
+		var mixer = mixitup('.container', config);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
